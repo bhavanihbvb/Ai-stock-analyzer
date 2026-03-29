@@ -49,7 +49,7 @@ def login():
 def auth_page():
     st.markdown('<div class="center-box">', unsafe_allow_html=True)
     st.title("Smart Investor AI")
-    choice = st.radio("", ["Login", "Sign Up"])
+    choice = st.radio("Authentication", ["Login", "Sign Up"], label_visibility="collapsed")
     login() if choice == "Login" else signup()
     st.markdown('</div>', unsafe_allow_html=True)
 
